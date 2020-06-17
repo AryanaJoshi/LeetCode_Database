@@ -1,3 +1,3 @@
-# LeetCode_SQL
+# LeetCode_Database
 
 Leet Code SQL practice questions solutions.
