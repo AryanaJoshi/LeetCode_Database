@@ -1,0 +1,8 @@
+SELECT E1.Id,E1.Month, Sum(E2.Salary)
+FROM Employee E1 JOIN Employee E2
+ON E1.Id=E1.Id 
+AND E1.Month >= E2.Month
+WHERE E1.month <> (SELECT MAX(Month) FROM Employee WHERE Id=E1.Id)
+GROUP BY E1.Id,E1.Month
+ORDER BY E1.Id ASC ,E1.Month DESC
+
