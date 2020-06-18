@@ -1,4 +1,4 @@
-SELECT E1.Id,E1.Month, Sum(E2.Salary)
+SELECT E1.Id,E1.Month, Sum(E2.Salary) as CSalary
 FROM Employee E1 JOIN Employee E2
 ON E1.Id=E1.Id 
 AND E1.Month >= E2.Month
